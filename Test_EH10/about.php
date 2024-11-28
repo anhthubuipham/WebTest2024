@@ -1,5 +1,23 @@
+<?php
+// Session starten
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+<?php include("includes/pagehead.php"); ?>
+<link rel="stylesheet" href="res/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
 <body>
     <main>
         <div class="container mt-5">
@@ -20,4 +38,9 @@
         </div>
     </main>
 </body>
+
+<footer>
+<?php include("includes/footer.php"); ?>
+</footer>
+
 </html>
